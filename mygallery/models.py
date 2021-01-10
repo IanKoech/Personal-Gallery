@@ -35,3 +35,28 @@ class Image(models.Model):
     def filter_image(cls, category):
         images = cls.objects.filter(category=category)
         return images
+
+class Location(models.Model):
+    country= models.CharField(max_length=30)
+    city = models.CharField(max_length=30)
+
+    def save_location(self):
+        self.save()
+
+    def delete_location(self):
+        self.delete()
+
+    def update_location(self):
+        self.update()
+
+class Category(models.Model):
+    name = models.CharField(max_length=30)
+
+    def save_category(self):
+        self.save()
+
+    def delete_category(self):
+        self.delete()
+
+    def update_category(self):
+        self.update()

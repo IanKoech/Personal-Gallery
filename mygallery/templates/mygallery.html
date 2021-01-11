@@ -2,9 +2,8 @@
 
 {%block content%}
 {%block styles%}
-{{block.super}}
-<link rel="stylesheet" href="../static/css/gallery.css">
-
+    {{block.super}}
+    <link rel="stylesheet" href="../static/css/gallery.css">
 {%endblock%}
 <div class="category">
     <h2> Family</h2>
@@ -15,7 +14,7 @@
             <a href="/image/{{image.id}}">
                 <div class="img">
 
-                    <img class="photo" src="{{image.image_url.url}}" alt="image">
+                    <img class="photo" src="{{images.image_url.url}}" alt="image">
                     <p>{{image.name}}</p>
                     <p>Taken on <em>{{image.date}}</em> at <em>{{image.location.city}},{{image.location.country}}</em>
                     </p>
@@ -39,7 +38,7 @@
             <a href="/image/{{image.id}}">
                 <div class="img">
 
-                    <img class="photo" src="{{image.image_url.url}}" alt="image">
+                    <img class="photo" src="{{images.image_url.url}}" alt="image">
                     <p>{{image.name}}</p>
                     <p>Taken on <em>{{image.date}}</em> at <em>{{image.location.city}},{{image.location.country}}</em>
                     </p>
@@ -63,7 +62,7 @@
             <a href="/image/{{image.id}}">
                 <div class="img">
 
-                    <img class="photo" src="{{image.image_url.url}}" alt="image">
+                    <img class="photo" src="{{images.image_url.url}}" alt="image">
                     <p>{{image.name}}</p>
                     <p>Taken on <em>{{image.date}}</em> at <em>{{image.location.city}},{{image.location.country}}</em>
                     </p>
@@ -87,7 +86,7 @@
             <a href="/image/{{image.id}}">
                 <div class="img">
 
-                    <img class="photo" src="{{image.image_url.url}}" alt="image">
+                    <img class="photo" src="{{images.image_url.url}}" alt="image">
                     <p>{{image.name}}</p>
                     <p>Taken on <em>{{image.date}}</em> at <em>{{image.location.city}},{{image.location.country}}</em>
                     </p>
@@ -110,7 +109,7 @@
             <a href="/image/{{image.id}}">
                 <div class="img">
 
-                    <img class="photo" src="{{image.image_url.url}}" alt="image">
+                    <img class="photo" src="{{images.image_url.url}}" alt="image">
                     <p>{{image.name}}</p>
                     <p>Taken on <em>{{image.date}}</em> at <em>{{image.location.city}},{{image.location.country}}</em>
                     </p>

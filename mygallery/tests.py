@@ -62,12 +62,36 @@ class CategoryTestClass(TestCase):
     def test_saving(self):
         self.new_category.save_category()
         categories = Category.objects.all()
-        self.assertTrue(len(categories) >0)
+        self.assertTrue(len(categories) > 0)
 
     def test_saving(self):
         self.new_category.save_category()
         categories = Category.objects.all()
-        self.assertTrue(len(categories) >0)    
+        self.assertTrue(len(categories) > 0)    
         self.new_category.delete_category()
         categories = Category.objects.all()
-        self.assertFalse(len(categories) >0)   
+        self.assertFalse(len(categories) > 0)   
+
+class LocationTestClass(TestCase):
+    def setUp(self):
+
+        self.new_location = Location(country='Kenya',city='Kisumu')
+
+    def tearDown(self):
+        Location.objects.all().delete()
+
+    def test_instance(self):
+        self.assertTrue(isinstance(self.new_location,Location))
+
+    def test_saving(self):
+        self.new_location.save_location()
+        locations = Location.objects.all()
+        self.assertTrue(len(locations) >0)
+
+    def test_saving(self):
+        self.new_location.save_location()
+        locations = Location.objects.all()
+        self.assertTrue(len(locations) >0)    
+        self.new_location.delete_location()
+        locations = Location.objects.all()
+        self.assertFalse(len(locations) >0)

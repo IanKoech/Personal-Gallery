@@ -1,0 +1,18 @@
+                  List of relations
+ Schema |            Name            | Type  | Owner 
+--------+----------------------------+-------+-------
+ public | auth_group                 | table | ian
+ public | auth_group_permissions     | table | ian
+ public | auth_permission            | table | ian
+ public | auth_user                  | table | ian
+ public | auth_user_groups           | table | ian
+ public | auth_user_user_permissions | table | ian
+ public | django_admin_log           | table | ian
+ public | django_content_type        | table | ian
+ public | django_migrations          | table | ian
+ public | django_session             | table | ian
+ public | mygallery_category         | table | ian
+ public | mygallery_image            | table | ian
+ public | mygallery_location         | table | ian
+(13 rows)
+

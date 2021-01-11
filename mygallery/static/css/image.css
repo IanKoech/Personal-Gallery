@@ -1,3 +1,25 @@
 html{
     font-family: 'Montserrat';
 }
+img{
+    width: 100%;
+    padding: 4%;
+}
+.image{
+    
+    margin: 2%;
+    height: 72vh;
+}
+
+.row{
+    margin: 2%;
+    align-items: center;
+}
+
+.description{
+    align-items: center;
+    text-align: center;
+    padding: 10% 1%;
+    height: 72vh;
+    margin: 2%;
+}

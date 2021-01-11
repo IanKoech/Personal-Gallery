@@ -1,0 +1,34 @@
+{%extends 'base.html'%}
+
+{%block content%}
+
+{%block styles%}
+{{block.super}}
+<link rel="stylesheet" href="../static/css/gallery.css">
+
+{%endblock%}
+{%if images %}
+
+<p class="message">The images in the <strong><em>{{category.name}}</em></strong> category include: </p>
+{% else %}
+<p class="message">{{default}}</p>
+{%endif%}
+<div class="images">
+    {%for image in images%}
+    <div class="image">
+        <a href="/image/{{image.id}}">
+            <div class="img">
+
+                <img class="photo" src="{{image.image_url.url}}" alt="image">
+                <p>{{image.name}}</p>
+                <p>Taken on <em>{{image.date}}</em> at <em>{{image.location.city}},{{image.location.country}}</em> </p>
+
+
+            </div>
+        </a>
+    </div>
+
+    {%endfor%}
+</div>
+
+{%endblock%}

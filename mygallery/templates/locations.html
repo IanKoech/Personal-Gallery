@@ -1,0 +1,111 @@
+{% extends 'base.html'%}
+
+{%block content%}
+
+{%block styles%}
+{{block.super}}
+<link rel="stylesheet" href="../static/css/locations.css">
+
+{%endblock%}
+
+<div class="category">
+
+    
+    <div class="">
+        {%for image in images%}
+        <div class="">
+            {%if image.location.country == "Kenya"%}
+            <div class="">
+                {%if image.location.city == "Kisumu"%}
+
+                <div class="image">
+                    <a href="/image/{{image.id}}">
+                        <div class="img">
+
+                            <img class="photo" src="{{image.image_url.url}}" alt="image">
+                            <p>{{image.name}}</p>
+                            <p>Taken on <em>{{image.date}}</em> at
+                                <em>{{image.location.city}},{{image.location.country}}</em>
+                            </p>
+
+
+                        </div>
+                    </a>
+
+                </div>
+                {%endif%}
+            </div>
+
+            <div class="images">
+
+                {%if image.location.city == "Nairobi"%}
+                <div class="image">
+                    <a href="/image/{{image.id}}">
+                        <div class="img">
+
+                            <img class="photo" src="{{image.image_url.url}}" alt="image">
+                            <p>{{image.name}}</p>
+                            <p>Taken on <em>{{image.date}}</em> at
+                                <em>{{image.location.city}},{{image.location.country}}</em>
+                            </p>
+
+
+                        </div>
+                    </a>
+                </div>
+                {%endif%}
+            </div>
+
+            {%endif%}
+        </div>
+
+        <div class="">
+            {%if image.location.country == "Uganda"%}
+            <div class="images">
+                {%if image.location.city == "Kampala"%}
+
+                <div class="image">
+                    <a href="/image/{{image.id}}">
+                        <div class="img">
+
+                            <img class="photo" src="{{image.image_url.url}}" alt="image">
+                            <p>{{image.name}}</p>
+                            <p>Taken on <em>{{image.date}}</em> at
+                                <em>{{image.location.city}},{{image.location.country}}</em>
+                            </p>
+
+
+                        </div>
+                    </a>
+                </div>
+                {%endif%}
+            </div>
+
+            <div class="images">
+
+
+                {%if image.location.city == "Jinja"%}
+                <div class="image">
+                    <a href="/image/{{image.id}}">
+                        <div class="img">
+
+                            <img class="photo" src="{{image.image_url.url}}" alt="image">
+                            <p>{{image.name}}</p>
+                            <p>Taken on <em>{{image.date}}</em> at
+                                <em>{{image.location.city}},{{image.location.country}}</em>
+                        </div>
+                        </p>
+
+
+                </div>
+                </a>
+                {%endif%}
+            </div>
+
+            {%endif%}
+        </div>
+        {%endfor%}
+    </div>
+</div>
+
+{%endblock%}

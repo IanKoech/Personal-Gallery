@@ -1,0 +1,22 @@
+{%extends 'base.html'%}
+
+{%block content%}
+
+{%block styles%}
+{{block.super}}
+<link rel="stylesheet" href="../static/css/image.css">
+
+{%endblock%}
+<div class="row">
+    <div class="image col-md-5 card">
+        <img src="{{image.image_url.url}}" alt="image">
+      
+    </div>
+
+    <div class="col-md-5 card description">
+        <p>{{image.name}}</p>
+        <p>Taken on <em>{{image.date}}</em> at <em>{{image.location.city}},{{image.location.country}}</em> </p>
+        <p>{{image.description}}</p>
+    </div>
+</div>
+{%endblock%}

@@ -2,23 +2,25 @@ html{
     font-family: "Montserrat";
 }
 body{
-    text-align: center;
+    overflow-x: hidden;
 }
 .message{
     margin:2%;
 }
 .images{
     text-align: center;
-    padding: 42px;
-    display: flexbox;
-    
+    padding: 12px;
+    display: grid;
+    grid-template-columns: auto auto auto;
     width: 100%;
     margin-left: 10%;   
 }
 .image{
     width: 300px;
-    
-    
+    margin: 5%;
+    padding: 2%;
+    border: 1px solid black;
+    border-radius: 24px;
 }
 
 .photo{

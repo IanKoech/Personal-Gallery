@@ -1,5 +1,5 @@
-from django.shortcuts import render
-from django.http import HttpResponse, Http404
+from django.shortcuts import render, redirect
+from django.http import HttpResponse, Http404, HttpRequest
 from .models import Image, Category, Location
 import pyperclip
 
@@ -7,7 +7,7 @@ import pyperclip
 def gallery(request):
     images = Image.objects.all()
     title = 'My gallery'
-    return render(request, 'mygallery.html', {"images":images, "title":title})
+    return render(request, 'home.html', {"images":images, "title":title})
 
 def categories(request):
     categories = Category.objects.all()

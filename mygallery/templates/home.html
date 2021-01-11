@@ -1,0 +1,34 @@
+{%extends 'base.html'%}
+
+{% block content %}
+{% block styles %}
+    {{block.super}}
+    <link rel="stylesheet" href="../static/css/gallery.css">
+{% endblock %}
+<div>
+    <p>Available Categories : Family, Food, Work, Education, Travel, Animals</p>
+    
+</div>
+<div class="category">
+     
+    <div class="images">
+        
+        {%for image in images%}
+       <div class= "border">
+            <div class="image ">
+                <a href="/image/{{image.id}}">
+                    <div class="img">
+
+                        <img class="photo" src="{{image.image_url.url}}" alt="image">
+                        <p>{{image.name}}</p>
+                        <p>Taken on <em>{{image.date}}</em> at <em>{{image.location.city}},{{image.location.country}}</em>
+                        </p>
+                    </div>
+                </a>
+            </div>
+       </div>
+        
+        {%endfor%}
+    </div>
+</div>
+{% endblock %}

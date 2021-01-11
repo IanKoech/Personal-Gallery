@@ -15,8 +15,10 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
+from mygallery import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url('^$', views.gallery, name = 'gallery'),
     url(r'',include('mygallery.urls'))
 ]

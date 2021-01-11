@@ -1,19 +1,18 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="jumbotron">
-        <div class="navbar-header" style="text-align: center;">
-            <a class="navbar-brand" href="{%url 'gallery'%}">My Gallery</a>
-        </div>
-    </div>
-    
-  
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-  
-  
-      </ul>
-      <form class="form-inline my-2 my-lg-0"role="search" action="{% url 'search_results'%}">
-        <input class="form-control mr-sm-2" type="search" name="category" placeholder="Search" aria-label="Search" >
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
-    </div>
+<div class='jumbotron' style="background-color: rgb(66, 33, 61); font-size:large;height: 2px">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="{%url 'gallery'%}" style="text-align: center; font-size: large; color: tan; ">Photojournal Gallery</a>
   </nav>
+</div>
+
+<nav>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+
+
+    </ul>
+    <form class="form-inline my-2 my-lg-0"role="search" action="{% url 'search_results'%}">
+      <input class="form-control mr-sm-2" type="search" name="category" placeholder="Search the image category" aria-label="Search" >
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>

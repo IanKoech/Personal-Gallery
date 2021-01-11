@@ -6,11 +6,11 @@
         {% block styles %}
             
             {% bootstrap_css %}
-            
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
         {% endblock %}
     </head>
 
-    <body>
+    <body style="font-family: 'Montserrat';text-align: center; background-color: ;">
         {%block nav%}
             {% include "navbar.html" %}
         {% endblock%}
@@ -18,6 +18,9 @@
         {% block scripts %}
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
             {% bootstrap_javascript %}
+        {% endblock %}
+
+        {% block content %}
         {% endblock %}
     </body>
 

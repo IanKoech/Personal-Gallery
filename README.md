@@ -4,24 +4,24 @@ This is a web application that allows users to view images from a creators photo
 ---
 Also click on the images to view details about them
 
-#### Author
+### Author
 
-The author of the project is `Ian Koech` and can be contacted through `iankoech9@gmail.com`
+The author of the project is Ian Koech and can be contacted through iankoech9@gmail.com
 
-#### Set-up and Installations
+### Set-up and Installations
 ---
-`git clone <repository link>`
-`cd <repo>` 
+git clone <repository link>
+cd <repo> 
 ---
-Install all project dependencies found at the `requirements.txt` file inside `venv`
+Install all project dependencies found at the requirements.txt file inside `venv
 ---
 Configure database for class models
-Add the database and bootstap into `INSTALLED_APPS` in the `settings.py` file
+Add the database and bootstap into INSTALLED_APPS in the settings.py` file
 
-`python3.8 manage.py runserver`
+python3.8 manage.py runserver
 
 ---
-#### Technologies Used
+### Technologies Used
 
 Python
 
@@ -31,7 +31,7 @@ PostgreSQL
 
 HTML & CSS  -  Bootstrap
 
-#### License and Copyright
+### License and Copyright
 
 Copyright (2021) Ian Koech Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 

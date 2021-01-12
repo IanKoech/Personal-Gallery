@@ -1,7 +1,7 @@
 ### Personal Gallery
 
 This is a web application that allows users to view images from a creators photojournal
----
+
 Also click on the images to view details about them
 
 ### Author
@@ -9,12 +9,13 @@ Also click on the images to view details about them
 The author of the project is Ian Koech and can be contacted through iankoech9@gmail.com
 
 ### Set-up and Installations
----
+
 git clone <repository link>
+
 cd <repo> 
----
+
 Install all project dependencies found at the requirements.txt file inside `venv
----
+
 Configure database for class models
 Add the database and bootstap into INSTALLED_APPS in the settings.py` file
 
